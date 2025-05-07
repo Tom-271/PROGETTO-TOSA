@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- SEZIONE DINAMICA 1 -->
+        <TextView
+            android:id="@+id/tvSection0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sezione Dinamica 0"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:paddingTop="30dp"
+            android:paddingBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSection0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- SEZIONE DINAMICA 1 -->
+        <TextView
+            android:id="@+id/tvSection1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sezione Dinamica 1"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:paddingTop="30dp"
+            android:paddingBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSection1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <!-- SEZIONE DINAMICA 2 -->
+        <TextView
+            android:id="@+id/tvSection2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sezione Dinamica 2"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:paddingTop="30dp"
+            android:paddingBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSection2"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="70dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
